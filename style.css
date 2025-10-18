@@ -1,3 +1,15 @@
+@font-face {
+  font-family: chill;
+  src: url(./63cffc0a3942456e003bc265_Chillax-Regular.woff);
+}
+@font-face {
+  font-family: satoshi;
+  src: url(./63cffc20aa8997095067596f_Satoshi-Light.woff);
+}
+@font-face {
+  font-family: robot;
+  src: url(./RobotoMono-VariableFont_wght.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -61,11 +73,13 @@ main section.view1 .bottom .text h1 {
   font-weight: 300;
   font-size: 2.5rem;
   text-transform: uppercase;
+  font-family: chill;
 }
 main section.view1 .bottom .text p {
   font-size: 1.2rem;
   opacity: 0.5;
   line-height: 1.5;
+  font-family: satoshi;
 }
 main section.view1 .bottom .text button {
   width: -moz-fit-content;
@@ -94,9 +108,11 @@ main section.view2 .top .element, main section.view2 .bottom .element {
 main section.view2 .top .element small, main section.view2 .bottom .element small {
   opacity: 0.7;
   font-size: 1.3rem;
+  font-family: robot;
 }
 main section.view2 .top .element h2, main section.view2 .bottom .element h2 {
   font-size: 3rem;
+  font-family: chill;
 }
 main section.view3 {
   width: 100%;
@@ -133,14 +149,71 @@ main section.view3 .bottom .text h1 {
   font-weight: 300;
   font-size: 2.5rem;
   text-transform: uppercase;
+  font-family: chill;
 }
 main section.view3 .bottom .text p {
   font-size: 1.2rem;
   opacity: 0.5;
   line-height: 1.5;
+  font-family: satoshi;
 }
 main section.view3 .bottom > p {
   text-transform: uppercase;
+}
+main section.view5 {
+  width: 100%;
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view5 .top {
+  width: 100%;
+}
+main section.view5 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main section.view5 .bottom {
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 1rem;
+  border-radius: 7px;
+}
+main section.view5 .bottom .bottom > p {
+  text-transform: uppercase;
+}
+main section.view5 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view5 .bottom .text h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: chill;
+}
+main section.view5 .bottom .text p {
+  font-size: 1.2rem;
+  opacity: 0.5;
+  line-height: 1.5;
+  font-family: satoshi;
+}
+main section.view5 .bottom > p {
+  text-transform: uppercase;
+}
+main section.view6 {
+  padding: 1rem 2rem;
+  width: 100%;
+}
+main section.view6 h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: chill;
 }
 main section.view4 {
   display: flex;
@@ -169,6 +242,7 @@ main section.view4 .card1 .icon, main section.view4 .card1 .bottom {
   justify-content: space-between;
   padding: 1rem;
   text-transform: uppercase;
+  font-family: chill;
 }
 main section.view4 .card1 .bottom p {
   font-size: 1.3rem;
@@ -205,6 +279,7 @@ main section.view4 .card2 .icon, main section.view4 .card2 .bottom {
   justify-content: space-between;
   padding: 1rem;
   text-transform: uppercase;
+  font-family: chill;
 }
 main section.view4 .card2 .bottom p {
   font-size: 1.3rem;
@@ -241,6 +316,7 @@ main section.view4 .card3 .icon, main section.view4 .card3 .bottom {
   justify-content: space-between;
   padding: 1rem;
   text-transform: uppercase;
+  font-family: chill;
 }
 main section.view4 .card3 .bottom p {
   font-size: 1.3rem;
@@ -256,6 +332,59 @@ main section.view4 .card3 .top .icon {
   border-radius: 50%;
   font-size: 1.5rem;
   cursor: pointer;
+}
+main section.view7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view7 .top {
+  width: 100%;
+}
+main section.view7 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main section.view7 .bottom {
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  padding: 1rem;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+main section.view7 .bottom .text p {
+  opacity: 0.7;
+  text-transform: uppercase;
+  font-family: robot;
+}
+main section.view7 .bottom .text h1 {
+  font-family: chill;
+  text-transform: uppercase;
+}
+main section.view7 .bottom .para {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.7rem;
+}
+main section.view7 .bottom .para .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  background-color: rgba(130, 125, 125, 0.174);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+main section.view7 .bottom .para > p {
+  font-family: robot;
 }
 
 @media (min-width: 900px) {
@@ -300,7 +429,43 @@ main section.view4 .card3 .top .icon {
     display: flex;
     gap: 2rem;
   }
+  main section.view5 {
+    flex-direction: row;
+  }
+  main section.view5 .bottom, main section.view5 .top {
+    width: 50%;
+  }
+  main section.view5 .bottom {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  main section.view5 .bottom .text h1 {
+    font-size: 3rem;
+  }
+  main section.view5 .bottom .text .para {
+    display: flex;
+    gap: 2rem;
+  }
   main section.view4 {
     flex-direction: row;
+  }
+  main section.view7 {
+    flex-direction: row;
+  }
+  main section.view7 .bottom, main section.view7 .top {
+    width: 50%;
+  }
+  main section.view7 .bottom {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  main section.view7 .bottom .text h1 {
+    font-size: 3rem;
+  }
+  main section.view7 .bottom .text .para {
+    display: flex;
+    gap: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
